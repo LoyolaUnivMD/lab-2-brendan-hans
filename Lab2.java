@@ -30,8 +30,11 @@ class Lab2 {
             System.out.print("\n");
         }
 
+        System.out.println("-".repeat(18));
+
         DecimalFormat formatter = new DecimalFormat("#,###");
         System.out.println("$" + formatter.format(prize));
 
+        System.out.println("-".repeat(18));
     }
 }
