@@ -16,22 +16,31 @@ class Lab2 {
         long prize = 225938745L;
         Scanner input = new Scanner(System.in);
 
+        //intro
         System.out.println("CS 212 - Lab 2");
         System.out.println("This program generates 10 lottery tickets.");
-        
+
+        //Get user name
         System.out.print("What's your name? ");
 
         String customerName = input.nextLine();
 
+        //Generate lottery numbers
         for (int i = 1; i <= 10; i++) {
             for (int j = 1; j <= 6; j++) {
                 System.out.print(String.format("%02d", (int)(Math.random() * (99 + 1))) + " ");
             }
             System.out.print("\n");
         }
+
+        // Output name and potential jackpot
         System.out.println("-".repeat(18));
+
+        // Format name
         System.out.println("Good luck " +customerName.replaceAll("\\s.*", "")+ "!");
         System.out.println("Estimated Jackpot:");
+
+        // Format long
         DecimalFormat formatter = new DecimalFormat("#,###");
         System.out.println("$" + formatter.format(prize));
         System.out.println("-".repeat(18));
