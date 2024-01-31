@@ -1,13 +1,11 @@
-// Programmers:  [your names here]
+// Programmers:  Brendan and Hans
 // Course:  CS 212
-// Due Date:
-// Lab Assignment:
-// Problem Statement:
-// Data In:
-// Data Out:
-// Credits: [Is your code based on an example in the book, in class, or something else?
-//            Reminder: you should never take code from the Internet or another person
-
+// Due Date: 2/4/24
+// Lab Assignment: 2
+// Problem Statement: Make a simulation for 10 tickets of powerball and output the user's name during the steps.
+// Data In: User's name
+// Data Out: Numbers for lottery tickets, user's name, potential prize
+// Credits:
 import java.util.Scanner;
 
 class Lab2 {
@@ -22,6 +20,11 @@ class Lab2 {
 
         String customerName = input.nextLine();
 
-
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 6; j++) {
+                System.out.print(String.format("%02d", (int)(Math.random() * (99 + 1))) + " ");
+            }
+            System.out.print("\n");
+        }
     }
 }
