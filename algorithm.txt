@@ -1,6 +1,8 @@
+import Scanner
+
 1. print out description of the program
 2. ask for the player's name
 3. for int i = 1, i <= 10, increment i by 1 after each repetition
-    a. for i = 1, i <= 6, increment i by 1 after each repetition
+    a. for j = 1, j <= 6, increment j by 1 after each repetition
         i. generate random number 0-99 and output it without a newline, but with a space at the end
 4. print out Good luck (name), then the estimated Jackpot underneath
