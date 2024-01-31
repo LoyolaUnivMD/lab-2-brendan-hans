@@ -5,7 +5,10 @@
 // Problem Statement: Make a simulation for 10 tickets of powerball and output the user's name during the steps.
 // Data In: User's name
 // Data Out: Numbers for lottery tickets, user's name, potential prize
-// Credits:
+// Credits: [Is your code based on an example in the book, in class, or something else?
+//            Reminder: you should never take code from the Internet or another person
+
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 class Lab2 {
@@ -26,5 +29,9 @@ class Lab2 {
             }
             System.out.print("\n");
         }
+
+        DecimalFormat formatter = new DecimalFormat("#,###");
+        System.out.println("$" + formatter.format(prize));
+
     }
 }
