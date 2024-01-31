@@ -30,6 +30,9 @@ class Lab2 {
             System.out.print("\n");
         }
 
+
+        System.out.println("Good luck " +customerName.replaceAll("\\s.*", "")+ "!");
+        System.out.println("Estimated Jackpot:");
         DecimalFormat formatter = new DecimalFormat("#,###");
         System.out.println("$" + formatter.format(prize));
 
