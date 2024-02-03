@@ -1,8 +1,12 @@
 import Scanner
+import DecimalFormat
 
 1. print out description of the program
-2. ask for the player's name
-3. for int i = 1, i <= 10, increment i by 1 after each repetition
+2. ask for the player's name: "What is your name? "
+3. ask for the player's bet: "How much would you like to play? "
+4. for int i = 1, i <= 10, increment i by 1 after each repetition
     a. for j = 1, j <= 6, increment j by 1 after each repetition
-        i. generate random number 0-99 and output it without a newline, but with a space at the end
-4. print out Good luck (name), then the estimated Jackpot underneath
+        i. generate random number 0-99 and output it without a newline, but with a space at the end (adding a leading 0 for numbers 0-9)
+        ii. if the number is one of the jackpot numbers
+            1. increase the number stored in bet by a power of 1.75 and store back to bet
+5. print out Good luck (name), then their prize underneath
